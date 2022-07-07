@@ -698,7 +698,7 @@ Pacman.Map = function (size) {
             layout === Pacman.BLOCK ||
             layout === Pacman.BISCUIT
         ) {
-            ctx.fillStyle = prevGray;
+            ctx.fillStyle = prevLightOrange;
             ctx.fillRect(x * blockSize, y * blockSize, blockSize, blockSize);
 
             if (layout === Pacman.BISCUIT) {
