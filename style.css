@@ -14,25 +14,37 @@
     font-style: normal;
 }
 #pacman {
-    height: 80vh;
-    width: 100%;
-    margin: 2px auto;
+    height: 450px;
+    width: 342px;
+    margin: 20px auto;
 }
 #shim {
     font-family: BDCartoonShoutRegular;
     position: absolute;
     visibility: hidden;
 }
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+#pacman-container {
+    padding: 0px 40px;
+}
+#face {
+    width: 70px;
+    margin: 0px 0px 30px 0px;
+}
 h1 {
     font-family: BDCartoonShoutRegular;
     text-align: center;
     color: #ed784c;
+    margin-top: 100px;
 }
 body {
     width: 100vw;
     margin: 0px auto;
     font-family: sans-serif;
-    background-color: #f2f2f2;
+    background-color: #fff;
 }
 a {
     text-decoration: none;

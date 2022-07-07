@@ -10,6 +10,7 @@
 
 const prevGray = "#F2F2F2";
 const prevOrange = "#ED784C";
+const prevLightOrange = "#FCF5EF";
 const prevDarkOrange = "#BD481C";
 
 var NONE = 4,
@@ -199,7 +200,7 @@ Pacman.Ghost = function (game, map, colour) {
         off[DOWN] = [0, f];
 
         ctx.beginPath();
-        ctx.fillStyle = prevGray;
+        ctx.fillStyle = prevLightOrange;
         ctx.arc(
             left + 6 + off[direction][0],
             top + 6 + off[direction][1],
@@ -642,7 +643,7 @@ Pacman.Map = function (size) {
                 if (map[i][j] === Pacman.PILL) {
                     ctx.beginPath();
 
-                    ctx.fillStyle = prevGray;
+                    ctx.fillStyle = prevLightOrange;
                     ctx.fillRect(
                         j * blockSize,
                         i * blockSize,
@@ -671,7 +672,7 @@ Pacman.Map = function (size) {
             j,
             size = blockSize;
 
-        ctx.fillStyle = prevGray;
+        ctx.fillStyle = prevLightOrange;
         ctx.fillRect(0, 0, width * size, height * size);
 
         drawWall(ctx);
@@ -697,7 +698,7 @@ Pacman.Map = function (size) {
             layout === Pacman.BLOCK ||
             layout === Pacman.BISCUIT
         ) {
-            ctx.fillStyle = prevGray;
+            ctx.fillStyle = prevLightOrange;
             ctx.fillRect(x * blockSize, y * blockSize, blockSize, blockSize);
 
             if (layout === Pacman.BISCUIT) {
